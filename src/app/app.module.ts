@@ -8,13 +8,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { BooksComponent } from './shared/books/books.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { CartComponent } from './shared/cart/cart.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     BooksComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

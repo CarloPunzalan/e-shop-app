@@ -1,5 +1,6 @@
 <app-header></app-header>
 <div class="container">
+  <div class="{{mode ? 'show' : 'hide'}}">
   <div class="row">
     <div class="col-3 book-card" *ngFor="let book of books">
       <div class="card" style="width: 18rem;">
@@ -13,8 +14,6 @@
     </div>
   </div>
 </div>
-
-<!-- <app-footer></app-footer> -->
-
-  <!-- <button (click)="post()">test post</button> -->
+<app-cart class="{{mode ? 'hide' : 'show'}}" [cart]="cart"></app-cart>
+</div>
 

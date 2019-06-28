@@ -22,6 +22,8 @@ export class AppComponent {
       console.log(data)
       this.books = data
     })
+
+    localStorage.setItem("mode", "init")
   }
 
   post(){
