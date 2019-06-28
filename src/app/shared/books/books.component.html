@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+<!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+        <p hidden>{{book.ID}}</p>
+        <h5 class="card-header">P{{book.PageCount}} - {{book.Title}}</h5>
+        <p class="card-text">{{book.Description}}</p>
+        <button (click)="addToCart(book)" class="btn btn-warning">Add to Cart</button>
+    </div>
+</div>
