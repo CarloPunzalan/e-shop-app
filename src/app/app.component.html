@@ -1,8 +1,7 @@
-<app-header></app-header>
+<app-header [itemCount]="this.cart.length"></app-header>
 <div class="container">
   <div class="{{mode ? 'show' : 'hide'}}" >
   <div class="row">
-    <p style="color: red">{{ this.cart.length}}</p>
     <div class="col-3 book-card" *ngFor="let book of books">
       <div class="card" style="width: 18rem;">
           <img src="http://www.pngmart.com/files/1/Book-PNG-HD.png" class="card-img-top" alt="sample_book">
