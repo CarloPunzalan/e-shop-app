@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { HttpClientService } from './services/http-client.service';
 import { HttpClientModule } from '@angular/common/http';
 import { BooksComponent } from './shared/books/books.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BooksComponent
+    BooksComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
