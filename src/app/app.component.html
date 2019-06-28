@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="container">
-  <div class="{{mode ? 'show' : 'hide'}}">
+  <div class="{{mode ? 'show' : 'hide'}}" >
   <div class="row">
     <p style="color: red">{{ this.cart.length}}</p>
     <div class="col-3 book-card" *ngFor="let book of books">
@@ -15,6 +15,6 @@
     </div>
   </div>
 </div>
-<app-cart class="{{mode ? 'hide' : 'show'}}" [cart]="cart"></app-cart>
+<app-cart  class="{{mode ? 'hide' : 'show'}}"[cart]="cart"></app-cart>
 </div>
 

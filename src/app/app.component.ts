@@ -11,7 +11,7 @@ export class AppComponent {
   books : any
   cart = []
   count : any
-
+  mode : any
   constructor(
     private httpClientService : HttpClientService){
   }
@@ -27,6 +27,8 @@ export class AppComponent {
     localStorage.setItem("mode", "init")
     this.cart = JSON.parse(localStorage.getItem("books"))
     console.log(this.cart.length)
+    this.mode = localStorage.getItem("mode")
+    console.log(this.mode)
   }
 
   post(){

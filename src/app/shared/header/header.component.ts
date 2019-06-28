@@ -12,4 +12,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  changeMode(mode)
+  {
+    if(mode == 'show')
+    {
+      localStorage.setItem("mode", "show")
+    }
+  }
 }

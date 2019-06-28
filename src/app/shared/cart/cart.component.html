@@ -1,0 +1,26 @@
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let details of cart">
+                <td>{{details.title}}</td>
+                <td>{{details.desc}}</td>
+                <td>Php {{details.price}}.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Total</td>
+                <td>Php {{totalPrice}}.00</td>
+            </tr>
+        </tbody>
+    </table> 
+    
+    <button class="btn btn-submit" >Checkout</button>
+</div>
+        
