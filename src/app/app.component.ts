@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, IterableDiffers } from '@angular/core';
 import { HttpClientService } from './services/http-client.service';
 
 @Component({
@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'e-shop-app';
   books : any
   cart = []
+  count : any
 
   constructor(
     private httpClientService : HttpClientService){
@@ -24,6 +25,8 @@ export class AppComponent {
     })
 
     localStorage.setItem("mode", "init")
+    this.cart = JSON.parse(localStorage.getItem("books"))
+    console.log(this.cart.length)
   }
 
   post(){
